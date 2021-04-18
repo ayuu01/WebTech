@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost:27017/mini2",{
+mongoose.connect("mongodb+srv://ayushi01:webtech_01@mini2.jf9or.mongodb.net/test",{
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true
