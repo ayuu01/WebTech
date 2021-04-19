@@ -1,5 +1,7 @@
 const mongoose = require("mongoose");
-mongoose.connect("mongodb+srv://ayushi01:webtech_01@mini2.jf9or.mongodb.net/mini2",{
+
+const DB= process.env.DATABASE;
+mongoose.connect(DB,{
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true
