@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
-
-mongoose.connect("mongodb+srv://ayushi:webtech_01@cluster0.wb5xe.mongodb.net/mini2?retryWrites=true&w=majority",{
+const DB= process.env.DATABASE;
+mongoose.connect(DB,{
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
