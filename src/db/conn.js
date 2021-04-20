@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
-const DB= process.env.DATABASE;
-mongoose.connect(DB,{
+
+mongoose.connect(process.env.DATABASE,{
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
